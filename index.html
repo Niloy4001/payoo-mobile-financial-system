@@ -63,12 +63,12 @@
         <!-- Home page  -->
          <section class="w-full bg-white py-6 rounded-b-3xl px-5">
           <!-- top div  -->
-          <div class="flex justify-between py-5">
+          <div class="flex justify-between py-5 sticky top-0 bg-white">
             <!-- left div  -->
             <div class="flex items-center gap-x-3">
               <div><i class="fa-solid fa-landmark fa-flip-vertical fa-2xl text-4xl" style="color: #0874f2;"></i></div>
               <div>
-                <h1 class="text-[#080808]/[0.9] text-lg font-extrabold mb-[6px]">Tk :<span> 45000</span></h1>
+                <h1 class="text-[#080808]/[0.9] text-lg font-extrabold mb-[6px]">Tk :<span id="account-balance"> 45000</span></h1>
                 <p class="text-[#080808]/[0.5] text-sm font-normal">Available Balance</p>
               </div>
             </div>
@@ -83,7 +83,7 @@
           <div class="divider"></div>
           <!-- all button div  -->
            <div>
-            <h1 class="text-[#080808] text-2xl font-bold mb-3">Welcome to Payooo!</h1>
+            <h1 class="text-[#080808] text-2xl font-bold mb-3">🔥 Welcome to Payooo!</h1>
             <p class="text-[#080808]/[0.5] text-base font-normal mb-6">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
            </div>
            <div class="grid grid-cols-3 grid-rows-2 gap-4">
@@ -92,89 +92,29 @@
               <p class="text-[#080808]/[0.7] text-sm font-normal">Add Money</p>
             </div>
             <div class="flex flex-col justify-center items-center gap-2 px-[10px] py-5 border border-solid border-primary3/[0.1] rounded-xl" onclick="showSection(event)">
-              <img src="asset/add-money.png" alt="">
+              <img src="asset/cashout.png" alt="">
               <p class="text-[#080808]/[0.7] text-sm font-normal">Cash out</p>
             </div>
             <div class="flex flex-col justify-center items-center gap-2 px-[10px] py-5 border border-solid border-primary3/[0.1] rounded-xl" onclick="showSection(event)">
-              <img src="asset/add-money.png" alt="">
+              <img src="asset/money-transfer.png" alt="">
               <p class="text-[#080808]/[0.7] text-[10px] font-normal">Transfer Money</p>
             </div>
             <div class="flex flex-col justify-center items-center gap-2 px-[10px] py-5 border border-solid border-primary3/[0.1] rounded-xl" onclick="showSection(event)">
-              <img src="asset/add-money.png" alt="">
+              <img src="asset/bonus.png" alt="">
               <p class="text-[#080808]/[0.7] text-sm font-normal">Get Bonus</p>
             </div>
             <div class="flex flex-col justify-center items-center gap-2 px-[10px] py-5 border border-solid border-primary3/[0.1] rounded-xl" onclick="showSection(event)">
-              <img src="asset/add-money.png" alt="">
+              <img src="asset/bill.png" alt="">
               <p class="text-[#080808]/[0.7] text-sm font-normal">Pay Bill</p>
             </div>
             <div class="flex flex-col justify-center items-center gap-2 px-[10px] py-5 border border-solid border-primary3/[0.1] rounded-xl" onclick="showSection(event)">
-              <img src="asset/add-money.png" alt="">
+              <img src="asset/transaction.png" alt="">
               <p class="text-[#080808]/[0.7] text-sm font-normal">Transactions</p>
             </div>
            </div>
 
          </section>
-         <!-- Latest payment section  -->
-          <section class="w-full bg-primary1 py-8 px-5" id="latest-payment-section">
-            <div class="flex justify-between mb-8">
-              <h1 class="text-[#080808]/[0.9] text-lg font-semibold">Latest Payment</h1>
-              <h1 class="text-[#080808]/[0.5] text-sm font-normal">View All</h1>
-            </div>
-            <!--for adding  history  section  -->
-            <div class="space-y-3">
-              <!-- history 1 -->
-              <div class="flex justify-between items-center bg-white px-4 py-3  rounded-xl">
-                <!-- left div  -->
-                <div class="flex items-center gap-x-3">
-                  <div class="bg-primary1 rounded-full p-4"><img src="asset/add-money.png" alt=""></div>
-                  <div>
-                    <h1 class="text-[#080808]/[0.7] text-base font-semibold mb-[6px]"><span> Electricity Bill</span></h1>
-                    <p class="text-[#080808]/[0.7] text-[12px] font-normal">Today 01:44 AM</p>
-                  </div>
-                </div>
-                <!-- right div  -->
-                <div>
-                  <button class="font-normal text-sm text-primary3/[0.5]">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </button>
-                </div>
-              </div>
-              <!-- history 2 -->
-              <div class="flex justify-between items-center bg-white px-4 py-3  rounded-xl">
-                <!-- left div  -->
-                <div class="flex items-center gap-x-3">
-                  <div class="bg-primary1 rounded-full p-4"><img src="asset/add-money.png" alt=""></div>
-                  <div>
-                    <h1 class="text-[#080808]/[0.7] text-base font-semibold mb-[6px]"><span> Electricity Bill</span></h1>
-                    <p class="text-[#080808]/[0.7] text-[12px] font-normal">Today 01:44 AM</p>
-                  </div>
-                </div>
-                <!-- right div  -->
-                <div>
-                  <button class="font-normal text-sm text-primary3/[0.5]">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </button>
-                </div>
-              </div>
-              <!-- history 3 -->
-              <div class="flex justify-between items-center bg-white px-4 py-3  rounded-xl">
-                <!-- left div  -->
-                <div class="flex items-center gap-x-3">
-                  <div class="bg-primary1 rounded-full p-4"><img src="asset/add-money.png" alt=""></div>
-                  <div>
-                    <h1 class="text-[#080808]/[0.7] text-base font-semibold mb-[6px]"><span> Electricity Bill</span></h1>
-                    <p class="text-[#080808]/[0.7] text-[12px] font-normal">Today 01:44 AM</p>
-                  </div>
-                </div>
-                <!-- right div  -->
-                <div>
-                  <button class="font-normal text-sm text-primary3/[0.5]">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </section>
+         
           <!-- Add money section -->
            <section class="w-full bg-primary1 py-8 px-5 hidden" id="add-money-section">
             <div class="mb-4">
@@ -183,14 +123,14 @@
             <div class="bg-white p-8 rounded-3xl w-full">
               <div class="mb-4">
                 <h1 class="text-[#080808] text-base font-medium mb-3">Amount to Add</h1>
-                <input type="text" placeholder="Add Amount to add" class="input w-full bg-primary1 rounded-3xl">
+                <input type="text" placeholder="Add Amount to add" class="input w-full bg-primary1 rounded-3xl" id="add-money-amount">
               </div>
               <div class="mb-4">
                 <h1 class="text-[#080808] text-base font-medium mb-3">Pin Number</h1>
-                <input type="text" placeholder="Enter 4 digit pin number" class="input w-full bg-primary1 rounded-3xl">
+                <input type="text" placeholder="Enter 4 digit pin number" class="input w-full bg-primary1 rounded-3xl" id="add-money-pin">
               </div>
               <div>
-                <input type="button" value="Add Money" class="w-full bg-primary2 text-white font-semibold text-xl text-center input rounded-3xl">
+                <input type="button" value="Add Money" class="w-full bg-primary2 text-white font-semibold text-xl text-center input rounded-3xl" id="add-money-btn">
               </div>
             </div>
            </section>
@@ -209,7 +149,7 @@
                 <input type="text" placeholder="Enter 4 digit pin number" class="input w-full bg-primary1 rounded-3xl">
               </div>
               <div>
-                <input type="button" value="Withdraw Money" class="w-full bg-primary2 text-white font-semibold text-xl text-center input rounded-3xl">
+                <input type="button" value="Withdraw Money" class="w-full bg-primary2 text-white font-semibold text-xl text-center input rounded-3xl"  onclick="cashOut(event)">
               </div>
             </div>
            </section>
@@ -228,7 +168,7 @@
                 <input type="text" placeholder="Enter 4 digit pin number" class="input w-full bg-primary1 rounded-3xl">
               </div>
               <div>
-                <input type="button" value="Send" class="w-full bg-primary2 text-white font-semibold text-xl text-center input rounded-3xl">
+                <input type="button" value="Send" class="w-full bg-primary2 text-white font-semibold text-xl text-center input rounded-3xl" onclick="cashOut(event)">
               </div>
             </div>
            </section>
@@ -243,7 +183,7 @@
                 <input type="text" placeholder="Enter your coupon" class="input w-full bg-primary1 rounded-3xl">
               </div>
               <div>
-                <input type="button" value="Get Bonus" class="w-full bg-primary2 text-white font-semibold text-xl text-center input rounded-3xl">
+                <input type="button" value="Get Bonus" class="w-full bg-primary2 text-white font-semibold text-xl text-center input rounded-3xl" onclick="getBonus(event)">
               </div>
             </div>
            </section>
@@ -262,7 +202,7 @@
                 <input type="text" placeholder="Enter 4 digit pin number" class="input w-full bg-primary1 rounded-3xl">
               </div>
               <div>
-                <input type="button" value="Pay Now" class="w-full bg-primary2 text-white font-semibold text-xl text-center input rounded-3xl">
+                <input type="button" value="Pay Now" class="w-full bg-primary2 text-white font-semibold text-xl text-center input rounded-3xl" onclick="cashOut(event)">
               </div>
             </div>
            </section>
@@ -273,58 +213,8 @@
               <h1 class="text-[#080808]/[0.5] text-sm font-normal">View All</h1>
             </div>
             <!--for adding  history  section  -->
-            <div class="space-y-3">
-              <!-- history 1 -->
-              <div class="flex justify-between items-center bg-white px-4 py-3  rounded-xl">
-                <!-- left div  -->
-                <div class="flex items-center gap-x-3">
-                  <div class="bg-primary1 rounded-full p-4"><img src="asset/add-money.png" alt=""></div>
-                  <div>
-                    <h1 class="text-[#080808]/[0.7] text-base font-semibold mb-[6px]"><span> Electricity Bill</span></h1>
-                    <p class="text-[#080808]/[0.7] text-[12px] font-normal">Today 01:44 AM</p>
-                  </div>
-                </div>
-                <!-- right div  -->
-                <div>
-                  <button class="font-normal text-sm text-primary3/[0.5]">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </button>
-                </div>
-              </div>
-              <!-- history 2 -->
-              <div class="flex justify-between items-center bg-white px-4 py-3  rounded-xl">
-                <!-- left div  -->
-                <div class="flex items-center gap-x-3">
-                  <div class="bg-primary1 rounded-full p-4"><img src="asset/add-money.png" alt=""></div>
-                  <div>
-                    <h1 class="text-[#080808]/[0.7] text-base font-semibold mb-[6px]"><span> Electricity Bill</span></h1>
-                    <p class="text-[#080808]/[0.7] text-[12px] font-normal">Today 01:44 AM</p>
-                  </div>
-                </div>
-                <!-- right div  -->
-                <div>
-                  <button class="font-normal text-sm text-primary3/[0.5]">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </button>
-                </div>
-              </div>
-              <!-- history 3 -->
-              <div class="flex justify-between items-center bg-white px-4 py-3  rounded-xl">
-                <!-- left div  -->
-                <div class="flex items-center gap-x-3">
-                  <div class="bg-primary1 rounded-full p-4"><img src="asset/add-money.png" alt=""></div>
-                  <div>
-                    <h1 class="text-[#080808]/[0.7] text-base font-semibold mb-[6px]"><span> Electricity Bill</span></h1>
-                    <p class="text-[#080808]/[0.7] text-[12px] font-normal">Today 01:44 AM</p>
-                  </div>
-                </div>
-                <!-- right div  -->
-                <div>
-                  <button class="font-normal text-sm text-primary3/[0.5]">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                  </button>
-                </div>
-              </div>
+            <div class="space-y-3" id="adding-history-section">
+  
             </div>
           </section>
       </section>

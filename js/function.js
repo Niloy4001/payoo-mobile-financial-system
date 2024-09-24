@@ -1,3 +1,4 @@
+
 function addHiddenClass(id){
     const result = document.getElementById(id);
     result.classList.add('hidden');
@@ -19,7 +20,6 @@ function showSection(event){
     addHiddenClass('transfer-section');
     addHiddenClass('cash-out-section');
     addHiddenClass('add-money-section');
-    addHiddenClass('latest-payment-section');
 
     const clickedButtonText = event.currentTarget.children[1].innerText;
     
@@ -53,3 +53,25 @@ function showSection(event){
         
     
 }
+
+
+
+
+function getTextInputValue(id){
+    const result = document.getElementById(id).value ;
+    return result;
+}
+
+
+
+
+function getNumberInputValue(id){
+    const result = document.getElementById(id).value ;
+    return parseFloat(result);
+}
+
+
+
+
+
+
