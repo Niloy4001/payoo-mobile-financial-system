@@ -1,9 +1,19 @@
 // Login form 
-const loginInput = document.getElementById('login-pin-input');
+const loginNumberInput = document.getElementById('login-number-input');
+const loginPinInput = document.getElementById('login-pin-input');
 const loginBtn = document.getElementById('login-btn');
 
+
+
+
 loginBtn.addEventListener('click',function(){
-   if (loginInput.value === '1234') {
+   if (loginPinInput.value === '1234') {
+    if (loginNumberInput.value === '' || isNaN(loginNumberInput.value) || loginNumberInput.value.length < 11) {
+        alert('Invalid Number');
+        return;
+    }
+    
+    
    addHiddenClass('login-form');
    removeHiddenClass('all-section');
    document.getElementById('login-pin-input').value = '';
