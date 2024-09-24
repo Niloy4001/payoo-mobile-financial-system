@@ -17,6 +17,7 @@ loginBtn.addEventListener('click',function(){
    addHiddenClass('login-form');
    removeHiddenClass('all-section');
    document.getElementById('login-pin-input').value = '';
+   document.getElementById('login-number-input').value = '';
     
    }
    else{
