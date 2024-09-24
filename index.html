@@ -40,7 +40,7 @@
   </head>
   <body class="font-outfit">
     <!-- login form  -->
-     <section class="max-w-md mx-auto h-lvh bg-[#F4F5F7] px-5">
+     <section class="max-w-md mx-auto h-lvh bg-[#F4F5F7] px-5" id="login-form">
       <div class="w-full h-full flex flex-col justify-center items-center">
         <div class="mb-11"> <i class="fa-solid fa-landmark fa-flip-vertical fa-2xl text-[64px]" style="color: #0874f2;"></i></div>
         <div class="bg-white p-8 rounded-3xl w-full">
@@ -50,16 +50,16 @@
           </div>
           <div class="mb-4">
             <h1 class="text-[#080808] text-base font-medium mb-3">4 Digit Pin</h1>
-            <input type="text" placeholder="Enter 4 Digit Pin" class="input w-full bg-primary1">
+            <input type="text" placeholder="Enter 4 Digit Pin" class="input w-full bg-primary1" id="login-pin-input">
           </div>
           <div>
-            <input type="button" value="Login" class="w-full bg-primary2 text-white font-semibold text-xl text-center input">
+            <input type="button" value="Login" class="w-full bg-primary2 text-white font-semibold text-xl text-center input" id="login-btn">
           </div>
         </div>
       </div>
      </section>
      <!-- All section -->
-      <section class="max-w-md mx-auto h-lvh ">
+      <section class="max-w-md mx-auto h-lvh hidden" id="all-section">
         <!-- Home page  -->
          <section class="w-full bg-white py-6 rounded-b-3xl px-5">
           <!-- top div  -->
@@ -74,7 +74,7 @@
             </div>
             <!-- right div  -->
             <div>
-              <button class="btn font-normal text-sm text-primary3/[0.5] border border-solid border-[primary3]/[0.1] flex items-center gap-x-1">
+              <button class="btn font-normal text-sm text-primary3/[0.5] border border-solid border-[primary3]/[0.1] flex items-center gap-x-1" id="logout-btn">
                 <span><i class="fa-solid fa-right-from-bracket"></i></span>
                 <span >Log Out</span>
               </button>
@@ -87,27 +87,27 @@
             <p class="text-[#080808]/[0.5] text-base font-normal mb-6">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
            </div>
            <div class="grid grid-cols-3 grid-rows-2 gap-4">
-            <div class="flex flex-col justify-center items-center gap-2 px-[10px] py-5 border border-solid border-primary3/[0.1] rounded-xl">
+            <div class="flex flex-col justify-center items-center gap-2 px-[10px] py-5 border border-solid border-primary3/[0.1] rounded-xl" onclick="showSection(event)">
               <img src="asset/add-money.png" alt="">
               <p class="text-[#080808]/[0.7] text-sm font-normal">Add Money</p>
             </div>
-            <div class="flex flex-col justify-center items-center gap-2 px-[10px] py-5 border border-solid border-primary3/[0.1] rounded-xl">
+            <div class="flex flex-col justify-center items-center gap-2 px-[10px] py-5 border border-solid border-primary3/[0.1] rounded-xl" onclick="showSection(event)">
               <img src="asset/add-money.png" alt="">
               <p class="text-[#080808]/[0.7] text-sm font-normal">Cash out</p>
             </div>
-            <div class="flex flex-col justify-center items-center gap-2 px-[10px] py-5 border border-solid border-primary3/[0.1] rounded-xl">
+            <div class="flex flex-col justify-center items-center gap-2 px-[10px] py-5 border border-solid border-primary3/[0.1] rounded-xl" onclick="showSection(event)">
               <img src="asset/add-money.png" alt="">
               <p class="text-[#080808]/[0.7] text-[10px] font-normal">Transfer Money</p>
             </div>
-            <div class="flex flex-col justify-center items-center gap-2 px-[10px] py-5 border border-solid border-primary3/[0.1] rounded-xl">
+            <div class="flex flex-col justify-center items-center gap-2 px-[10px] py-5 border border-solid border-primary3/[0.1] rounded-xl" onclick="showSection(event)">
               <img src="asset/add-money.png" alt="">
               <p class="text-[#080808]/[0.7] text-sm font-normal">Get Bonus</p>
             </div>
-            <div class="flex flex-col justify-center items-center gap-2 px-[10px] py-5 border border-solid border-primary3/[0.1] rounded-xl">
+            <div class="flex flex-col justify-center items-center gap-2 px-[10px] py-5 border border-solid border-primary3/[0.1] rounded-xl" onclick="showSection(event)">
               <img src="asset/add-money.png" alt="">
               <p class="text-[#080808]/[0.7] text-sm font-normal">Pay Bill</p>
             </div>
-            <div class="flex flex-col justify-center items-center gap-2 px-[10px] py-5 border border-solid border-primary3/[0.1] rounded-xl">
+            <div class="flex flex-col justify-center items-center gap-2 px-[10px] py-5 border border-solid border-primary3/[0.1] rounded-xl" onclick="showSection(event)">
               <img src="asset/add-money.png" alt="">
               <p class="text-[#080808]/[0.7] text-sm font-normal">Transactions</p>
             </div>
@@ -115,7 +115,7 @@
 
          </section>
          <!-- Latest payment section  -->
-          <section class="w-full bg-primary1 py-8 px-5">
+          <section class="w-full bg-primary1 py-8 px-5" id="latest-payment-section">
             <div class="flex justify-between mb-8">
               <h1 class="text-[#080808]/[0.9] text-lg font-semibold">Latest Payment</h1>
               <h1 class="text-[#080808]/[0.5] text-sm font-normal">View All</h1>
@@ -176,7 +176,7 @@
             </div>
           </section>
           <!-- Add money section -->
-           <section class="w-full bg-primary1 py-8 px-5">
+           <section class="w-full bg-primary1 py-8 px-5 hidden" id="add-money-section">
             <div class="mb-4">
               <h1 class="text-[#080808]/[0.9] text-lg font-semibold">Add Money</h1>
             </div>
@@ -195,7 +195,7 @@
             </div>
            </section>
            <!-- Cash out section -->
-           <section class="w-full bg-primary1 py-8 px-5">
+           <section class="w-full bg-primary1 py-8 px-5 hidden" id="cash-out-section">
             <div class="mb-4">
               <h1 class="text-[#080808]/[0.9] text-lg font-semibold">Cash Out</h1>
             </div>
@@ -214,7 +214,7 @@
             </div>
            </section>
            <!-- Transfer section -->
-           <section class="w-full bg-primary1 py-8 px-5">
+           <section class="w-full bg-primary1 py-8 px-5 hidden" id="transfer-section" >
             <div class="mb-4">
               <h1 class="text-[#080808]/[0.9] text-lg font-semibold">Transfer Money</h1>
             </div>
@@ -233,7 +233,7 @@
             </div>
            </section>
            <!-- Bonus section -->
-           <section class="w-full bg-primary1 py-8 px-5">
+           <section class="w-full bg-primary1 py-8 px-5 hidden" id="bonus-section">
             <div class="mb-4">
               <h1 class="text-[#080808]/[0.9] text-lg font-semibold">Get Bonus</h1>
             </div>
@@ -248,7 +248,7 @@
             </div>
            </section>
             <!-- Pay bill section -->
-           <section class="w-full bg-primary1 py-8 px-5">
+           <section class="w-full bg-primary1 py-8 px-5 hidden" id="pay-bill-section">
             <div class="mb-4">
               <h1 class="text-[#080808]/[0.9] text-lg font-semibold">Pay Bill</h1>
             </div>
@@ -266,8 +266,8 @@
               </div>
             </div>
            </section>
-           <!-- Latest payment section  -->
-          <section class="w-full bg-primary1 py-8 px-5">
+           <!-- Transaction History section  -->
+          <section class="hidden w-full bg-primary1 py-8 px-5" id="transaction-history-section">
             <div class="flex justify-between mb-8">
               <h1 class="text-[#080808]/[0.9] text-lg font-semibold">Transaction History</h1>
               <h1 class="text-[#080808]/[0.5] text-sm font-normal">View All</h1>
@@ -328,5 +328,7 @@
             </div>
           </section>
       </section>
+      <script src="js/function.js"></script>
+      <script src="js/index.js"></script>
   </body>
 </html>
