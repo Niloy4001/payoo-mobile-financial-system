@@ -99,7 +99,7 @@ function cashOut(event) {
     let cashOutPin = event.target.parentElement.previousElementSibling.children[1].value;
     let cashOutAmount = parseFloat(event.target.parentElement.previousElementSibling.previousElementSibling.children[1].value);
 
-    if (cashOutAmount <=0 || isNaN(cashOutAmount) || cashOutAmount === '') {
+    if (cashOutAmount <=0 || isNaN(cashOutAmount) || cashOutAmount === '' || cashOutAmount > accountBalance) {
         alert('Invalid Amount');
         return;
     }
